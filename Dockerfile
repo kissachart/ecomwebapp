@@ -4,4 +4,4 @@ EXPOSE 80
 WORKDIR /
 COPY . /
 RUN npm install
-CMD node gajax.js
+CMD node api.js
