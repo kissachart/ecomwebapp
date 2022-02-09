@@ -1,0 +1,683 @@
+{
+	"info": {
+		"name": "API_ECOMWEBAPP",
+		"_postman_id": "e7129310-9056-9e18-31e4-9bfe9ec126b9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addcategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NAME\":\"a\"}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/category",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":1,\n\t\"NAME\":\"\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/category",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":1\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/category",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:3000/category?LIMIT=10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					],
+					"query": [
+						{
+							"key": "LIMIT",
+							"value": "10",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addGender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NAME\":\"ทางเลือก\"}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/gender",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"gender"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateGender",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":3,\n\t\"NAME\":\"\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/gender",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"gender"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteGender",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":3\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/gender",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"gender"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getGender",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:3000/gender",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"gender"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addSize",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NAME\":\"L\"}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/size",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"size"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateSize",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":4,\n\t\"NAME\":\"M\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/size",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"size"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSize",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":4\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/size",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"size"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getSize",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:3000/size?LIMIT=10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"size"
+					],
+					"query": [
+						{
+							"key": "LIMIT",
+							"value": "10",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addProduce",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"NAME\":\"เสื้อเชิ้ต\",\n\t\"GENDER\":1,\n\t\"CATEGORY\":3,\n\t\"SIZE\":1,\n\t\"PRICE\":250,\n\t\"NUMBER\":500\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/produce",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"produce"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduce",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":1,\n\t\"NAME\":\"เสื้อเชิ้ต\",\n\t\"GENDER\":1,\n\t\"CATEGORY\":3,\n\t\"SIZE\":1,\n\t\"PRICE\":250,\n\t\"NUMBER\":1000\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/produce",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"produce"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduce",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":1\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/produce",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"produce"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getProduce",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:3000/produce?LIMIT=2&PAGE=1&NAME=เสื้อเชิ้ต&GENDER=1&CATEGORY=3&SIZE=1&PRICE=250&NUMBER=500",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"produce"
+					],
+					"query": [
+						{
+							"key": "LIMIT",
+							"value": "2",
+							"equals": true
+						},
+						{
+							"key": "PAGE",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "NAME",
+							"value": "เสื้อเชิ้ต",
+							"equals": true
+						},
+						{
+							"key": "GENDER",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "CATEGORY",
+							"value": "3",
+							"equals": true
+						},
+						{
+							"key": "SIZE",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "PRICE",
+							"value": "250",
+							"equals": true
+						},
+						{
+							"key": "NUMBER",
+							"value": "500",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"STAMP_DATETIME\":\"2022-02-09 14:16:58\",\r\n\t\"PRODUCE_ID\":2,\r\n\t\"STATUS\":\"Y\",\r\n\t\"ADDRESS\":\"1234 ม.5\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/order",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateOrder",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":1,\n\t\"STAMP_DATETIME\":\"2022-02-09 14:16:58\",\n\t\"PRODUCE_ID\":2,\n\t\"STATUS\":\"N\",\n\t\"ADDRESS\":\"1234 ม.5\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/order",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOrder",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\":2\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/order",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "127.0.0.1:3000/order?LIMIT=2&PAGE=1&START_DATETIME=2022-02-01 00:00:00&STOP_DATETIME=2022-02-13 00:00:00&PRODUCE_ID=2&STATUS=N&ADDRESS=1234 ม.5",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					],
+					"query": [
+						{
+							"key": "LIMIT",
+							"value": "2",
+							"equals": true
+						},
+						{
+							"key": "PAGE",
+							"value": "1",
+							"equals": true
+						},
+						{
+							"key": "START_DATETIME",
+							"value": "2022-02-01 00:00:00",
+							"equals": true
+						},
+						{
+							"key": "STOP_DATETIME",
+							"value": "2022-02-13 00:00:00",
+							"equals": true
+						},
+						{
+							"key": "PRODUCE_ID",
+							"value": "2",
+							"equals": true
+						},
+						{
+							"key": "STATUS",
+							"value": "N",
+							"equals": true
+						},
+						{
+							"key": "ADDRESS",
+							"value": "1234 ม.5",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
